@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up | TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/signup.css" />
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <img class="searchLogo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Fimages.png?v=1574763107329">
+      
+      <form id="search" action="https://2560-final.glitch.me/api/movie/search?sort=name" method="post">     
+        <input id="query" type="text" name="query" />
+      </form>
+      
+      <% if(loginUser == null){ %>
+        <a href="https://2560-final.glitch.me/signin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/user/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginUser != null){ %>
+        <a class="username" href="https://2560-final.glitch.me/api/user/profile/<%= loginUser._id%>"><span>&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginUser.username%>)</span></a>
+      <% } %>      
+    </div>
+    
+    <!-- sign up form -->
+    <form id="signup" action="https://2560-final.glitch.me/api/user/signup" method="post" enctype="multipart/form-data">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" required />      
+      
+      <label for="photo">Photo</label>
+      <input class="photo" type="file" id="photo" name="photo" accept="image/png, image/jpeg" required />
+      
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" required />
+      
+      <label for="repeatPassword">Repeat Password</label>
+      <input id="repeatPassword" type="password" name="repeatPassword" required />
+      <div><span id="warning" class="warning"></span></div>
+      
+      <input id="submit" class="submit" type="submit" value="Sign Up" disabled />
+    </form>
+    
+    <!-- footer -->
+    <footer>
+      @Pitt
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>  
+      $("#repeatPassword").keyup(function(){
+        var pwd1 = $("#password").val();
+        var pwd2 = $("#repeatPassword").val();
+        if(pwd1 == pwd2) {
+          $("#warning").text(" ");
+          $("#submit").prop("disabled", false);
+        } else {
+          $("#warning").text("Inconsistent passwords");
+          $("#submit").prop("disabled", true);
+        }
+      });
+      $("#search").keydown(function(e){
+        var curKey = e.which; 
+        if(curKey == 13){
+          $('#search').submit(); 
+        }
+      })
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,48 @@
+form{
+  width: 45%;
+  margin: 150px auto 0 auto;
+}
+
+label {
+  display: block;
+  font-size: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input { 
+  color: white;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  border: 0; 
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+.submit{
+  color: #FF5900;
+  width: 150px;
+  height: 44px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 2px solid #FF5900;
+  margin-top: 30px;
+}
+
+.signup{
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  margin-top: 30px;
+  float: right;
+  color: #FF5900;
+}
+
+.warning{
+  width: 30%;
+  margin: 0 auto;
+  color: orange;
+  text-align: center;
+  font-size: 25px;
+}

@@ -1,0 +1,343 @@
+[
+  {
+    "name": "Frozen 2", 
+    "description": "Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.",
+    "releaseDate": "11/22/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SY1000_SX675_AL_.jpg",
+    "duration": "1h 43min",
+    "language": "English",
+    "director": "Chris Buck; Jennifer Lee",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "A Beautiful Day in the Neighborhood", 
+    "description": "Based on the true story of a real-life friendship between Fred Rogers and journalist Tom Junod.",
+    "releaseDate": "11/22/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTc1OWFmZDYtNDkzMy00ZjM2LTkxZDItM2E3ZTg3NTE1ZWE2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "duration": "1h 48min",
+    "language": "English",
+    "director": "Marielle Heller",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Joker", 
+    "description": "In Gotham City, mentally-troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: 'The Joker'.",
+    "releaseDate": "10/4/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "duration": "2h 2min",
+    "language": "English",
+    "director": "Todd Phillips",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Doctor Sleep", 
+    "description": "Years following the events of 'The Shining', a now-adult Dan Torrance must protect a young girl with similar powers from a cult known as The True Knot, who prey on children with powers to remain immortal.",
+    "releaseDate": "11/8/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmY3NGJlYTItYmQ4OS00ZTEwLWIzODItMjMzNWU2MDE0NjZhXkEyXkFqcGdeQXVyMzQzMDA3MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "duration": "2h 32min",
+    "language": "English",
+    "director": "Mike Flanagan",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "The Dark Knight", 
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "releaseDate": "7/18/2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+    "duration": "2h 32min",
+    "language": "English; Mandarin",
+    "director": "Christopher Nolan",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Frozen", 
+    "description": "When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
+    "releaseDate": "11/19/2013",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "duration": "1h 42min",
+    "language": "English; Norwegian",
+    "director": "Chris Buck; Jennifer Lee",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "The Golden Compass", 
+    "description": "In a parallel universe, young Lyra Belacqua journeys to the far North to save her best friend and other kidnapped children from terrible experiments by a mysterious organization.",
+    "releaseDate": "3/28/2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM2NDkxMjQxMV5BMl5BanBnXkFtZTYwNTMxMDM4._V1_.jpg",
+    "duration": "1h 53min",
+    "language": "English; Icelandic; Russian; French",
+    "director": "Chris Weitz",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Captain Marvel", 
+    "description": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
+    "releaseDate": "3/8/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+    "duration": "2h 3min",
+    "language": "English",
+    "director": "Anna Boden; Ryan Fleck",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Jumanji: Welcome to the Jungle", 
+    "description": "Four teenagers are sucked into a magical video game, and the only way they can escape is to work together to finish the game.",
+    "releaseDate": "1/12/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "duration": "1h 59min",
+    "language": "English",
+    "director": "Jake Kasdan",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "The Godfather", 
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "releaseDate": "3/24/1972",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,704,1000_AL_.jpg",
+    "duration": "2h 55min",
+    "language": "English; Italian; Latin",
+    "director": "Francis Ford Coppola",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Scary Stories to Tell in the Dark", 
+    "description": "On Halloween 1968, reclusive Stella and her two friends meet a mysterious drifter, Ramón, and uncover a sinister notebook of stories.",
+    "releaseDate": "8/9/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjNiM2E3NDItNGU5NS00N2UwLTk2YWItZWRmMGFlNjJhYzE3XkEyXkFqcGdeQXVyOTQ5MTIwMjM@._V1_SY1000_CR0,0,712,1000_AL_.jpg",
+    "duration": "1h 48min",
+    "language": "English",
+    "director": "André Øvredal",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Yesterday", 
+    "description": "A struggling musician realizes he's the only person on Earth who can remember The Beatles after waking up in an alternate timeline where they never existed.",
+    "releaseDate": "8/16/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjQ0NTI0NjkyN15BMl5BanBnXkFtZTgwNzY0MTE0NzM@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+    "duration": "1h 56min",
+    "language": "English; Italian; Japanese",
+    "director": "Danny Boyle",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Spider-Man: Far from Home", 
+    "description": "Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.",
+    "releaseDate": "6/28/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGZlNTY1ZWUtYTMzNC00ZjUyLWE0MjQtMTMxN2E3ODYxMWVmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "duration": "2h 9min",
+    "language": "Italian; Czech; English",
+    "director": "Jon Watts",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "It Chapter Two", 
+    "description": "Twenty-seven years after their first encounter with the terrifying Pennywise, the Losers Club have grown up and moved away, until a devastating phone call brings them back.",
+    "releaseDate": "9/6/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTJlNjlkZTktNjEwOS00NzI5LTlkNDAtZmEwZDFmYmM2MjU2XkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    "duration": "2h 49min",
+    "language": "English",
+    "director": "Andy Muschietti",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "The Terminator", 
+    "description": "In 1984, a human soldier is tasked to stop an indestructible cyborg killing machine, both sent from 2029, from executing a young woman, whose unborn son is the key to humanity's future salvation.",
+    "releaseDate": "10/26/1984",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTViNzMxZjEtZGEwNy00MDNiLWIzNGQtZDY2MjQ1OWViZjFmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+    "duration": "1h 47min",
+    "language": "English; Spanish",
+    "director": "James Cameron",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "After", 
+    "description": "A young woman falls for a guy with a dark secret and the two embark on a rocky relationship. Based on the novel by Anna Todd.",
+    "releaseDate": "4/12/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGUwMjk3YzktNDI0Yy00MzFiLWFjNmEtYTA2ODVjMzNhODhjXkEyXkFqcGdeQXVyOTQ1MDI4MzY@._V1_SY1000_SX675_AL_.jpg",
+    "duration": "1h 45min",
+    "language": "English",
+    "director": "Jenny Gage",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "The Shawshank Redemption", 
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "releaseDate": "10/14/1994",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "duration": "2h 22min",
+    "language": "English",
+    "director": "Frank Darabont",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "Countdown", 
+    "description": "When a nurse downloads an app that claims to predict the moment a person will die, it tells her she only has three days to live. With the clock ticking and a figure haunting her, she must find a way to save her life before time runs out.",
+    "releaseDate": "10/25/2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjcxMjM4MjgtNTEwMi00ZmE2LTlhMWUtMzQ4OWFmYmQwM2NlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+    "duration": "1h 30min",
+    "language": "English",
+    "director": "Justin Dec",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "The Lion King", 
+    "description": "A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his father's death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities.",
+    "releaseDate": "7/15/1995",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SY1000_CR0,0,673,1000_AL_.jpg",
+    "duration": "1h 28min",
+    "language": "English; Swahili; Xhosa; Zulu",
+    "director": "Roger Allers; Rob Minkoff",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  },
+  {
+    "name": "American History X", 
+    "description": "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.",
+    "releaseDate": "11/20/1998",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjA0MTM4MTQtNzY5MC00NzY3LWI1ZTgtYzcxMjkyMzU4MDZiXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg",
+    "duration": "1h 59min",
+    "language": "English",
+    "director": "Tony Kaye",
+    "reviews": [
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0},
+      {"content": "", "rating": 0}
+    ],
+    "rating": 0
+  }
+]

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin Pick | TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/admin_base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pick.css" />
+  </head>
+
+  <body>
+    <% if(loginAdmin == null){ %>
+    <h1>
+      Not authrized!
+    </h1>
+    <a href="https://2560-final.glitch.me/admin">go to login page</a>
+    <% } else { %>
+    
+     <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/admin">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <span class="title">Admin Manage Page</span>
+      
+      <% if(loginAdmin == null){ %>
+        <a href="https://2560-final.glitch.me/admin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/admin/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginAdmin != null){ %>
+        <span class="username">&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginAdmin.username%>)</span>
+      <% } %> 
+    </div>
+    
+    <!-- manage navigation -->
+    <div class="subNav">
+      <a class="movieManage" href="https://2560-final.glitch.me/api/admin/manage">
+        Movie Manage
+      </a>
+      <a class="pick" href="https://2560-final.glitch.me/api/admin/pick">
+        Editors'picks
+      </a>  
+    </div>
+    
+    <!-- table -->
+    <table>
+      <% movies.forEach(movie=>{ %>
+        <tr>
+          <td class="left">
+            <%= movie.movieId.name %>
+          </td>
+          <td class="right">
+            <span class="id"><%= movie._id%></span>
+            <a class="delete" href="https://2560-final.glitch.me/api/admin/deletePick/<%= movie._id%>">Delete</a>
+          </td>
+        </tr>
+      <% }) %>
+    </table>
+    
+    <% }%>
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      // $(".delete").click(function(){
+      //   var id = $(this).prev().text();
+      //   console.log(id);
+      //   $.ajax({
+      //      url: 'https://2560-final.glitch.me/api/admin/deletePick/' + id,
+      //      type: 'DELETE',
+      //      success: function(result) {
+      //       // Do something with the result
+      //      }
+      //   });
+      // });     
+    </script>
+  </body>
+</html>

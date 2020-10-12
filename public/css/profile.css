@@ -1,0 +1,63 @@
+form{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#form_username{
+  margin-top: 150px;
+}
+
+label {
+  display: inline-block;
+  width: 14%;
+  font-size: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input { 
+  color: white;
+  height: 30px;
+  background-color: black;
+  border: 0; 
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+.content{
+  display: inline-block;
+  width: 50%;
+}
+
+.btn{
+  display: inline-block;
+  width: 16%;
+  color: #FF5900;
+  text-align: right;
+}
+
+.photo{
+  width: 30%;
+}
+
+.photoInput{
+  width: 68%;
+  visibility: hidden;
+}
+
+#saveUsername{
+  visibility: hidden;
+}
+
+#savePhoto{
+  visibility: hidden;
+}
+
+.password{
+  display: inline;
+  visibility: hidden;
+}
+
+.warning{
+  color: #FF5900;
+}

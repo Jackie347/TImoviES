@@ -1,0 +1,220 @@
+.box{
+  width: 60%;
+  margin: 50px auto;
+}
+
+.back{
+  color: #A8A8A8;
+  margin-bottom: 30px;
+}
+
+.picture{
+  display: inline-block;
+  width: 40%;
+  height: 500px;
+  margin: 0;
+}
+
+.picture img{
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.info{
+  display: inline-block;
+  float: right;
+  width: 60%;
+  height: 500px;
+  margin: 0;
+  border-left: 1px solid white;
+  box-sizing: border-box;
+}
+
+.basic{
+  display: inline-block;
+  width: 45%;
+  margin-left: 5%;
+  height: 170px;
+  padding-top: 50px;
+}
+
+.basic p {
+  margin: 5px 0;
+  color: #A8A8A8;
+}
+
+.rate{
+  display: inline-block;
+  width: 50%;
+  float: right;
+  height: 170px;
+  text-align: right;
+}
+
+.rating{
+  color: #FF5900;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+.number{
+  color: #A8A8A8;
+}
+
+.discription{
+  margin-left: 5%;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+a{
+  color: #FF5900;
+}
+
+.reviews{
+  width: 55%;
+  margin: 0 auto;
+}
+
+.reviews h2{
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.review{
+  width: 100%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  height: 160px;
+  margin: 20px auto;
+}
+
+.photo{
+  float: left;
+  width: 15%;
+  height: 130px; 
+  text-align: center;
+  margin-top: 15px;
+}
+
+.photo img{
+  width: 75%;
+  height: 70%;
+  padding-top: 15px;
+}
+
+.content{
+  float: left;
+  width: 70%;
+  height: 130px; 
+  margin-top: 15px;
+}
+
+.content span{
+  display: -webkit-box;
+  line-height: 1.5;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  padding: 0 15px;
+}
+
+.personalRating{
+  float: left;
+  width: 15%; 
+  height: 130px; 
+  border-left: 1px solid white;
+  box-sizing: border-box;
+  margin-top: 15px;
+  line-height: 130px;
+  text-align: center;
+  color: #FF5900;
+  font-weight: bold;
+}
+
+#write {
+  width: 55%;
+  border: 1px solid white;
+  margin: 50px auto;
+}
+
+#write label{
+  display: block;
+  margin: 10px 5%;
+}
+
+#write #review,#score { 
+  background-color: black;
+  border: 0;   
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+#review { 
+  width: 90%;
+  height: 100px;
+  margin: 0px 5% 30px 5%;
+}
+
+#score{
+  width: 20%;
+  height: 40px;
+  margin: 0px 5% 20px 5%;
+}
+
+.submit{
+  display: block;
+  width: 20%;
+  text-align: center;
+  color: white;
+  background-color: #FF5900;
+  border: solid rgba(255, 255, 255, 1) 0px;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  line-height: 35px;
+  float: right;
+  font-size: 15px;
+}
+
+.submit:hover {
+  background-color: rgba(255,89,0,0.4);
+}
+
+/* for 1100px or less */
+@media screen and (max-width: 1100px){
+  
+.box{
+  width: 80%;
+  margin: 30px auto;
+}
+
+.reviews{
+  width: 75%;
+}
+  
+#write {
+  width: 75%;
+}
+  
+}
+
+/* for 400px or less */
+@media screen and (max-width: 400px){
+  
+.box{
+  width: 95%;
+  margin: 10px auto;
+}
+  
+.reviews{
+  width: 90%;
+}
+
+#write {
+  width: 90%;
+}
+  
+}

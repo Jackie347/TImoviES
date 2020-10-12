@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User Profile | TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/profile.css" />
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <img class="searchLogo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Fimages.png?v=1574763107329">
+      
+      <form id="search" action="https://2560-final.glitch.me/api/movie/search?sort=name" method="post">     
+        <input id="query" type="text" name="query" />
+      </form>
+      
+      <% if(loginUser == null){ %>
+        <a href="https://2560-final.glitch.me/signin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/user/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginUser != null){ %>
+        <a class="username" href="https://2560-final.glitch.me/api/user/profile/<%= loginUser._id%>"><span>&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginUser.username%>)</span></a>
+      <% } %>      
+    </div>
+    
+    <!-- username -->
+    <form id="form_username" action="https://2560-final.glitch.me/api/user/updateUsername" method="post">
+      <label for="username">Username</label>
+      <input id="username" class="content" id="username" type="text" name="username" value="<%= loginUser.username%>" disabled />   
+      <span class="btn"><a id="saveUsername">Update</a></span>
+      <span class="btn"><a id="changeUsername">Modify</a></span>
+    </form>
+    
+    <!-- photo -->
+    <form id="form_photo" action="https://2560-final.glitch.me/api/user/updatePhoto" method="post" enctype="multipart/form-data">
+      <label for="photo">Photo</label>
+      <div class="content">
+        <img class="photo" id="currentPhoto" src="data:image/jpeg;base64,<%= user.photo%>"/>
+        <input class="photoInput" type="file" id="photo" name="photo" accept="image/png, image/jpeg" disabled />
+      </div>  
+      <span class="btn"><a id="savePhoto">Upload</a></span>
+      <span class="btn"><a id="changePhoto">Modify</a></span>
+    </form>
+    
+    <!-- password -->
+    <form id="form_password" action="https://2560-final.glitch.me/api/user/updatePassword" method="post">
+      <div class="password">
+        <label for="password">Password</label>
+        <input class="content" id="password" type="password" name="password" required />
+      </div>
+      <span class="btn"></span>
+      <span class="btn"><a id="changePassword">Reset password</a></span>
+      
+      <div class="password">
+        <label for="repeatPassword">Repeat Password</label>
+        <input class="content" id="repeatPassword" type="password" name="repeatPassword" required />
+        <span class="btn"></span>
+        <span class="btn"><a id="savePassword">Update Password</a></span>
+      </div>
+      <div><span id="warning" class="warning"></span></div>
+    </form>
+  
+    
+    <!-- footer -->
+    <footer>
+      @Pitt
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(".item").mouseover(function(){
+        var info = $(this).children(":first");
+        info.css("visibility", "visible");
+      });
+      $(".item").mouseout(function(){
+        var info = $(this).children(":first");
+        info.css("visibility", "hidden");  
+      });
+      $("#search").keydown(function(e){
+        var curKey = e.which; 
+        if(curKey == 13){
+          $('#search').submit(); 
+        }
+      });
+      $("#changeUsername").click(function(){
+        $("#username").prop("disabled", false);
+        $("#saveUsername").css("visibility", "visible");
+        $("#saveUsername").css("color", "#FF5900");
+      });
+       $("#changePhoto").click(function(){
+        $("#photo").prop("disabled", false);
+        $(".photoInput").css("visibility", "visible");
+        $("#savePhoto").css("visibility", "visible");
+        $("#savePhoto").css("color", "#FF5900");
+        $("#currentPhoto").css("display", "none");
+      });
+      $("#changePassword").click(function(){
+        $(".password").css("visibility", "visible");
+        $("#savePassword").css("color", "#FF5900");
+      });
+      $("#saveUsername").click(function(){
+        $("#form_username").submit();
+      });
+      $("#savePhoto").click(function(){
+        $("#form_photo").submit();
+      });
+      $("#repeatPassword").keyup(function(){
+        var pwd1 = $("#password").val();
+        var pwd2 = $("#repeatPassword").val();
+        if(pwd1 == pwd2) {
+          $("#warning").text(" ");
+          $("#savePassword").click(function(){
+            $("#form_password").submit();
+          });
+        } else {
+          $("#warning").text("Inconsistent passwords");
+        }
+      });
+      
+    </script>
+    
+    <script>
+      $("#search").keydown(function(e){
+        var curKey = e.which; 
+        if(curKey == 13){
+          $('#search').submit(); 
+        }
+      });
+    </script>
+
+  </body>
+</html>

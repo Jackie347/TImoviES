@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin Update Movie | TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/admin_base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/updateMovie.css" />
+  </head>
+
+  <body>
+    <% if(loginAdmin == null){ %>
+    <h1>
+      Not authrized!
+    </h1>
+    <a href="https://2560-final.glitch.me/admin">go to login page</a>
+    <% } else { %>
+    
+    <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/admin">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <span class="title">Admin Manage Page</span>
+      
+      <% if(loginAdmin == null){ %>
+        <a href="https://2560-final.glitch.me/admin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/admin/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginAdmin != null){ %>
+        <span class="username">&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginAdmin.username%>)</span>
+      <% } %> 
+    </div>
+    
+    <!-- manage navigation -->
+    <div class="subNav">
+      <a class="movieManage" href="https://2560-final.glitch.me/api/admin/manage">
+        Movie Manage
+      </a>
+      <a class="pick" href="https://2560-final.glitch.me/api/admin/pick">
+        Editors'picks
+      </a>  
+    </div>
+    
+    <!-- form -->
+    <form id="form" action="https://2560-final.glitch.me/api/admin/updateMovie/<%= movie._id%>" method="post">
+      <p id="id"><%= movie._id%></p>
+      </p>  
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" value="<%= movie.name%>" required />      
+      
+      <label for="date">Release Date</label>
+      <input type="text" id="date" name="date" value="<%= date%>" required />
+      
+      <label for="duration">Duration</label>
+      <input type="text" id="duration" name="duration" value="<%= movie.duration%>" required />
+      
+      <label for="language">Language</label>
+      <input type="text" id="language" name="language" value="<%= movie.language%>" required />
+      
+      <label for="director">Director</label>
+      <input type="text" id="director" name="director" value="<%= movie.director%>" required />
+      
+      <div>
+        <label class="descriptionlabel" for="description">Description</label>
+        <input class="description" type="textarea" id="description" name="description" value="<%= movie.description%>" required />
+      </div>
+      
+      <label for="post">Post</label>
+      <img class="poster" src="data:image/jpeg;base64,<%= movie.poster%>">
+      
+      <div class="submitBox">       
+        <a id="addPick" class="addPick" href="https://2560-final.glitch.me/api/admin/pickone/<%= movie._id%>">Add to Editor's Picks</a>
+        <a id="delete" class="delete">Delete</a>
+        <a id="update" class="update">Update</a>
+      </div>    
+    </form>
+    <% }%>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $("#delete").click(function(){
+        var id = $("#id").text();
+        $.ajax({
+           url: 'https://2560-final.glitch.me/api/admin/deleteMovie/'+id,
+           type: 'DELETE',
+           success: function(result) {
+            // Do something with the result
+           }
+        });
+      });    
+      $("#update").click(function(){
+        $("#form").submit();
+      });     
+    </script>
+  </body>
+</html>

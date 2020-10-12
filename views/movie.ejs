@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>&nbsp;<%= movie.name %>&nbsp;| TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/movie.css" />
+    
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <img class="searchLogo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Fimages.png?v=1574763107329">
+      
+      <form id="search" action="https://2560-final.glitch.me/api/movie/search?sort=name" method="post">     
+        <input id="query" type="text" name="query" />
+      </form>
+      
+      <% if(loginUser == null){ %>
+        <a href="https://2560-final.glitch.me/signin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/user/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginUser != null){ %>
+        <a class="username" href="https://2560-final.glitch.me/api/user/profile/<%= loginUser._id%>"><span>&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginUser.username%>)</span></a>
+      <% } %>      
+    </div>
+    
+    <!-- movie information -->
+    <div class="box">
+      <div class="back">
+        <a id="back"> &lt; Back to Browse</a>
+      </div>
+      <div class="picture">
+        <h1>
+          <%= movie.name%> 
+        </h1>
+        <img src="data:image/jpeg;base64,<%= movie.poster%>">
+      </div>
+      <div class="info">
+        <div class="up">
+          <div class="basic">
+            <p>
+              Release Date: <%= date%>
+            </p>
+            <p>
+              Duration: <%= movie.duration%>
+            </p>
+            <p>
+              Language: <%= movie.language%>
+            </p>
+            <p> 
+              Director: <%= movie.director%>
+            </p>
+          </div>
+          <div class="rate">
+            <p class="rating"><%= movie.rating%></p>
+            <p class="number"><%= movie.reviewCount%> reviews</p>
+          </div>
+        </div> 
+        <div class="discription">
+          <p>
+            <%= movie.description%>
+          </p>
+          <% if(loginUser == null){ %>
+            <a href="https://2560-final.glitch.me/signin/">Sign in to write a review</a>
+          <% }  %>
+        </div>
+      </div>
+    </div>
+    
+    <!-- reviews -->
+    <div class="reviews">
+      <% if(movie.reviews.length == 0){ %>
+      <h2>
+        No Reviews
+      </h2>
+      <% } else { %>
+      <h2>
+        Reviews
+      </h2>
+      <% } %>
+      <% movie.reviews.forEach(review=>{ %>
+        <div class="review">
+          <div class="photo">
+            <img src="data:image/jpeg;base64,<%= review.userId.photo%>">
+          </div>
+          <div class="content">
+            <span>
+              <%= review.content %>
+            </span>
+          </div>
+          <div class="personalRating">
+              <%= review.rating %>
+          </div>
+        </div>
+      <% })%>
+    </div>
+    
+    <% if(loginUser != null){ %>
+    <form id="write" action="https://2560-final.glitch.me/api/movie/createReview/<%= movie._id%>" method="post">
+      <label class="label1" for="review">Write your review here:</label>
+      <input id="review" type="textarea" name="content" />
+      <label class="label2" for="score">Rating:</label>
+      <input id="score" type="text" name="rating" />
+      <input class="submit" type="submit" value="Submit" />      
+    </form>
+    <% } %>
+    
+    
+    <footer>
+      @Pitt
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $("#search").keydown(function(e){
+        var curKey = e.which; 
+        if(curKey == 13){
+          $('#search').submit(); 
+        }
+      });
+      $("#back").click(function(e){
+        $("#search").prop("action", "https://2560-final.glitch.me/api/movie/search?sort=-rating");
+        $("#search").submit();
+      });    
+    </script>
+  </body>
+</html>

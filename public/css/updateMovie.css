@@ -1,0 +1,95 @@
+form{
+  width: 70%;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-size: 1.4em;
+  margin-top: 30px;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 15%;
+  font-size: 15px;
+  text-align: right;
+}
+
+input { 
+  color: white;
+  height: 30px;
+  background-color: black;
+  border: 0; 
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 78%;
+}
+
+.description{
+  border: 1px solid white;
+  height: 100px;
+}
+
+.submitBox{
+  width: 100%;
+  margin: 30px auto;
+}
+
+.update, .delete, .addPick{
+  display: inline-block;
+  border: none;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  margin: 0 10px;
+  float: right;
+}
+
+.update{ 
+  background-color: orange; 
+  width: 15%;
+}
+
+.delete{
+  background-color: red; 
+  width: 15%;
+}
+
+.addPick{
+  background-color: white; 
+  width: 30%;
+}
+
+#id{
+  display: none;
+}
+
+.movieManage{
+  color: orange;
+}
+
+.poster{
+  width: 200px;
+}
+
+/* for 1100px or less */
+@media screen and (max-width: 1100px){
+
+form{
+  width: 80%;
+}
+
+}
+
+/* for 400px or less */
+@media screen and (max-width: 400px){
+
+form{
+  width: 95%;
+}
+  
+}

@@ -1,0 +1,42 @@
+table{
+  width: 70%;
+  margin: 0 auto;
+}
+
+td{
+  text-align: center;
+}
+
+.left{ 
+  width: 30%;
+}
+
+.right{
+  width: 70%;
+}
+
+.change, .delete {
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.change{
+  background-color: orange;
+}
+
+.delete{
+  background-color: red;
+  color: black;
+}
+
+.pick{
+  color: orange;
+}
+
+.id{
+  display: none;
+}

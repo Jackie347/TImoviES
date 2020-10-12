@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Browse Movies | TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/browse.css" />
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <img class="searchLogo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Fimages.png?v=1574763107329">
+      
+      <form id="search" action="https://2560-final.glitch.me/api/movie/search?sort=name" method="post"> 
+        <% if(query != null){ %>
+          <input id="query" type="text" name="query" value="<%= query%>"/>
+        <% } else { %>
+          <input id="query" type="text" name="query" />
+        <% } %>
+      </form>
+      
+      <% if(loginUser == null){ %>
+        <a href="https://2560-final.glitch.me/signin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/user/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginUser != null){ %>
+        <a class="username" href="https://2560-final.glitch.me/api/user/profile/<%= loginUser._id%>"><span>&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginUser.username%>)</span></a>
+      <% } %>      
+    </div>
+    
+    <!-- sorting -->
+    <div class="filter">
+      <% if(param == "name"){ %>
+        <a class="active" id="name"><span>sort by name</span></a>
+        <a id="rating"><span>sort by rating</span></a>
+      <% } else { %>
+        <a id="name"><span>sort by name</span></a>
+        <a class="active" id="rating"><span>sort by rating</span></a>
+      <% } %>   
+    </div>
+   
+    <!-- all movies -->
+   <div class="box">
+     <% movies.forEach(movie=>{ %>
+       <a href="https://2560-final.glitch.me/api/movie/one/<%= movie._id%>" class="movie">
+          <img class="moviePic" src="data:image/jpeg;base64,<%= movie.poster%>">
+          <div class="title">
+            <%= movie.name %>
+          </div>
+          <div class="rating">
+            <%= movie.rating %>
+          </div>    
+       </a>      
+    <% }) %>
+    </div>
+    
+    <!-- more -->
+    <div class="more"> 
+      <button>
+        Show More
+      </button>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+      @Pitt
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+    <script>
+      $( document ).ready(function() {
+        var divWidth = $(".movie").width();
+        console.log(divWidth);
+        $(".movie").css({'height': divWidth * 2});
+        var picWidth = $(".moviePic").width();
+        console.log(picWidth);
+        $(".moviePic").css({'height': picWidth * 1.618});
+      });
+      $("#search").keydown(function(e){
+        var curKey = e.which; 
+        if(curKey == 13){
+          $('#search').submit(); 
+        }
+      });
+      $("#name").click(function(e){
+        $("#search").prop("action", "https://2560-final.glitch.me/api/movie/search?sort=name");
+        $("#search").submit();
+      });
+      $("#rating").click(function(e){
+        $("#search").prop("action", "https://2560-final.glitch.me/api/movie/search?sort=-rating");
+        $("#search").submit();
+      })
+    </script>
+  </body>
+</html>

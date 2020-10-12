@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin Home | TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/admin_base.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/admin">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <span class="title">Admin Manage Page</span>
+      
+      <% if(loginAdmin == null){ %>
+        <a href="https://2560-final.glitch.me/admin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/admin/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginAdmin != null){ %>
+        <span class="username">&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginAdmin.username%>)</span>
+      <% } %> 
+    </div>
+    
+    <% if(loginAdmin != null){ %>
+      <div class="warning">
+        <p>
+          Already Logged In!
+        </p>
+        <a href="https://2560-final.glitch.me/api/admin/manage">Go to Admin Manage Page</a>
+      </div>      
+    <% } else { %>
+    
+    <!-- sign in form -->
+    <form id="signin" action="https://2560-final.glitch.me/api/admin/login" method="post">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" />
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" />
+      <input class="submit" type="submit" value="Sign In" />
+    </form>
+    
+    <!-- footer -->
+    <footer>
+      @Pitt
+    </footer>
+    
+     <% } %>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+  </body>
+</html>

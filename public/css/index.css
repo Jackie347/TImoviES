@@ -1,0 +1,139 @@
+.recommend {
+  position: relative;
+  width: 100%;
+}
+
+.recommend img {
+  width: 100%;
+}
+
+.recommend div {
+  border-left: solid 1px white;
+  width: 38%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  padding-left: 40px;
+}
+
+.recommend div h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.recommend div p {
+  margin: 0;
+  line-height: 1.6em;
+}
+
+.recommend div a {
+  display: block;
+  width: 30%;
+  text-align: center;
+  color: white;
+  background-color: #FF5900;
+  border: solid rgba(255, 255, 255, 1) 0px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  line-height: 35px;
+}
+
+.recommend div a:hover{
+  background-color: rgba(0,0,0,0.4);
+}
+
+.section {
+  padding: 20px 0 20px 10%;
+  color: #A8A8A8;
+  width: 100%;
+  font-size: 18px;
+}
+
+.section a {
+  color: #FF5900;
+  text-decoration: none;
+}
+
+.section a:hover {
+  color: #A8A8A8;
+}
+
+.carousel{
+  width: 100%;
+  overflow: hidden;
+}
+
+.owl-dots{
+  display: none;
+}
+
+.item{
+  position: relative;
+}
+
+/* .item img{
+  width: 276px;
+  height: 409px;
+} */
+
+.owl-nav{
+  width: 100%;
+  position: relative;
+}
+
+.owl-prev{
+  width: 20px;
+  position: absolute;
+  top: -250px;
+  left: 10px;
+}
+
+.owl-next{
+  width: 20px;
+  position: absolute;
+  top: -250px;
+  right: 10px;
+}
+
+.owl-nav span{
+  font-size: 50px;
+}
+
+.info_box{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.name{
+  margin: 70% auto 0 auto;
+  padding: 0 20px 0 40px;
+}
+
+.description{
+  margin: 10px auto 0 auto;
+  padding: 0 20px 0 40px;
+}
+
+/* for 1100px or less */
+@media screen and (max-width: 1100px){
+  
+.recommend div {
+  width: 45%;
+}
+
+.recommend div h1 {
+  font-size: 65px;
+}
+
+.recommend div p {
+  line-height: 1.5em;
+}
+
+}

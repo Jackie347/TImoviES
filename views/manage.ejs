@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin Manage | TImoviES</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../css/admin_base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/manage.css" />
+  </head>
+
+  <body>
+    <% if(loginAdmin == null){ %>
+    <h1>
+      Not authrized!
+    </h1>
+    <a href="https://2560-final.glitch.me/admin">go to login page</a>
+    <% } else { %>
+    
+    <!-- navigation -->
+    <div id="navigation" class="navigation">
+      <a class="logoLink" href="https://2560-final.glitch.me/admin">
+        <img class="logo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Flogo.png?v=1574484580750" />
+      </a>
+      <span class="title">Admin Manage Page</span>
+      
+      <% if(loginAdmin == null){ %>
+        <a href="https://2560-final.glitch.me/admin" class="signin">
+          Sign In
+        </a>  
+      <% } else { %>
+        <a href="https://2560-final.glitch.me/api/admin/logout" class="signin">
+          Log out
+        </a>  
+      <% }%>
+      
+      <% if(loginAdmin != null){ %>
+        <span class="username">&nbsp;&nbsp;&nbsp;&nbsp;(<%= loginAdmin.username%>)</span>
+      <% } %> 
+    </div>
+    
+    <!-- manage navigation -->
+    <div class="subNav">
+      <a class="movieManage" href="https://2560-final.glitch.me/api/admin/manage">
+        Movie Manage
+      </a>
+      <a class="pick" href="https://2560-final.glitch.me/api/admin/pick">
+        Editors'picks
+      </a>  
+    </div>
+    
+    <!-- main -->
+    <div class="container">
+      <!-- search form -->
+      <div class="left">
+        <div class="searchBox">
+          <form id="search" action="https://2560-final.glitch.me/api/admin/search" method="post">     
+            <input id="query" type="text" name="query" value="<%= query %>"/>
+            <img class="searchLogo" src="https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2Fimages.png?v=1574763107329">
+            <select class="select" id="selectYear" name="releaseYear">
+              <option value="" selected>Release Year: All</option>
+              <% years.forEach(year=>{ %>
+                <option value="<%= year.year%>" id="<%= year.year%>"><%= year.year%></option>
+              <% }) %>
+            </select>
+            <select class="select" id="selectLanguage" name="language">           
+              <option value="" selected>Language: All</option>
+              <% languages.forEach(language=>{ %>
+                <option value="<%= language.language%>" id="<%= language.language%>"><%= language.language%></option>
+              <% }) %>
+            </select>
+          </form> 
+        </div>
+        <div class="createBox">
+          <a class="search">Search</a>
+          <a class="create" href="https://2560-final.glitch.me/api/admin/addMovie">Create a new movie</a>
+        </div>
+      </div>
+         
+      <!-- movies -->
+      <div class="right">
+        <p>
+          Release Year: <%= releaseYear %>; Language: <%= language %>
+        </p>
+        <% movies.forEach(movie=>{ %>
+        <a href="https://2560-final.glitch.me/api/admin/movie/<%= movie._id%>" class="movie">
+            <img class="moviePic" src="data:image/jpeg;base64,<%= movie.poster%>"> 
+            <div class="movietitle">
+              <%= movie.name %>
+            </div>
+            <div class="movierating">
+              <%= movie.rating %>
+            </div>                
+       </a>      
+      <% }) %>  
+      </div>  
+    </div>
+    <% }%>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+    <script>
+      $( document ).ready(function() {
+        var divWidth = $(".movie").width();
+        console.log(divWidth);
+        $(".movie").css({'height': divWidth * 2});
+        var picWidth = $(".moviePic").width();
+        console.log(picWidth);
+        $(".moviePic").css({'height': picWidth * 1.618});
+      });
+      $(".search").click(function() {
+        $("#search").submit();
+      });
+    </script>
+  </body>
+</html>

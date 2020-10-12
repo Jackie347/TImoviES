@@ -1,0 +1,42 @@
+[
+  {
+    "username": "Lucas", 
+    "password": "dbk1111", 
+    "photo": "https://microhealth.com/assets/images/illustrations/personal-user-illustration-@2x.png", 
+    "reviews": [
+      {"content": ""}
+    ]
+  },
+  {
+    "username": "Liya", 
+    "password": "lly2222", 
+    "photo": "http://www.clker.com/cliparts/b/1/f/a/1195445301811339265dagobert83_female_user_icon.svg.med.png", 
+    "reviews": [
+      {"content": ""}
+    ]
+  },
+  {
+    "username": "Borecomical", 
+    "password": "bor0123", 
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB2RJ6teOHD4AoqxM7V_UbIUrZEMzhjqZQHef1REHYWuzhmmSK&s", 
+    "reviews": [
+      {"content": ""}
+    ]
+  },
+  {
+    "username": "manplunk", 
+    "password": "man5555", 
+    "photo": "https://cdn.pixabay.com/photo/2013/07/13/13/38/man-161282_960_720.png", 
+    "reviews": [
+      {"content": ""}
+    ]
+  },
+  {
+    "username": "glitzypatient", 
+    "password": "gli1234", 
+    "photo": "http://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/256/Administrator-icon.png", 
+    "reviews": [
+      {"content": ""}
+    ]
+  }
+]

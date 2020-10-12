@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Poppins extra light";
+  src: url("https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2FPoppins-ExtraLight.ttf?v=1574483692394");
+}
+
+@font-face {
+  font-family: "Poppins extra bold";
+  src: url("https://cdn.glitch.com/d18e9959-9ac2-47bb-b596-b2cfc165135c%2FPoppins-ExtraBold.ttf?v=1574485531308");
+}
+
+body {
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins extra light";
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A8A8A8;
+}
+
+.navigation {
+  width: 100%;
+  height: 100px;
+}
+
+.logoLink{
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  height: 100px;
+  width: 20%;
+}
+
+.logo {
+  height: 50px;
+  padding-top: 25px;
+}
+
+#search{
+  float: left;
+  width: 58%;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 0;
+}
+
+.searchLogo{
+  float: left;
+  width: 2%;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+
+#query{
+  color: white;
+  width: 90%;
+  height: 25px;
+  background-color: black;
+  border: 0; 
+  padding-top: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid white;
+}
+
+.signin {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 10%;
+  height: 100px;
+  line-height: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #FF5900;
+  font-size: 25px;
+  margin: 0;
+}
+
+.username{
+  display: block;
+  float: left;
+  width: 10%;
+  box-sizing: border-box;
+  height: 100px;
+  color: #FF5900;
+  font-size: 18px;
+}
+
+.username span{
+  display: block;
+  line-height: 100px;
+  box-sizing: border-box;
+}
+
+footer{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  color: #A8A8A8;
+}
